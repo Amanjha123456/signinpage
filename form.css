@@ -1,0 +1,31 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form{
+    padding: 32px 64px 32px 64px;
+    border: solid 2px grey;
+    
+    background-color: rgb(236, 243, 247);
+}
+
+
+
+label{
+    display: block;
+    margin-bottom: 6px;
+}
+
+#dateOfBirth {
+    color: green;
+}
+
+#Warning {
+    color: red;
+}
+
+

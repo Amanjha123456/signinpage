@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="form.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+</head>
+<body>
+    <div class="form-container">
+
+        <form class="form-container" id="myForm">
+            <div>
+                <label for="user1">Username</label>
+                <input id="user1" placeholder="Enter Username" class="form-control">
+                <p id="user1Warning"></p>
+            </div>
+
+            <div>
+                <label for="psd">Password</label>
+                <input id="psd" placeholder="Enter Password" type="password" class="form-control">
+                <p id="psdWarning"></p>
+            </div>
+
+           
+
+           
+
+            <div>
+                <label for="email">Email</label>
+                <input id="email" placeholder="Enter Email" type="email" class="form-control">
+                <p id="emailWarning"></p>
+            </div>
+
+            
+
+            <div>
+                <label for="confirmEmail">Confirm Email</label>
+                <input id="confirmEmail" placeholder="Enter Email" type="email" class="form-control">
+                <p id="confirmEmailWarning"></p>
+            </div>
+
+
+           <div style="width: 80%;">
+            <label for="dob">Date of Birth:</label>
+            
+
+           </div>
+           <input type="date" id="dob" onchange="validateDateOfBirth()" style="width: 80%; ">
+        
+            <p id="dateOfBirth">Valid: Age is greater than 18</p>
+            <p id="Warning" >Invalid: Age must be greater than 18</p>
+
+          
+
+
+
+          
+
+
+
+
+
+            <div>
+                <label for="phoneNumber">Phone Number</label>
+                <input id="phoneNumber" placeholder="Enter Phone Number" type="tel" class="form-control">
+                <p id="phoneNumberWarning"></p>
+            </div>
+
+
+
+            <div>
+                <input id="checkBox"  type="checkbox" required>
+                <label for="checkBox" style="display: inline;">Terms & Condition</label>
+
+                <p id="checkBoxWarnings"></p>
+            </div>
+
+
+
+
+            <div class="capcha" id="capcha"></div>
+            <input type="text" id="capchainp" >
+            <p id="capchW"></p>
+
+            
+
+
+
+            <button class="btn btn-primary" id="submitButton"  type="submit">Submit</button>
+
+            
+
+
+            
+
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
